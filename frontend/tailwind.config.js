@@ -11,7 +11,13 @@ export default {
   ],
   darkMode: "class",
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        background: 'var(--background)',
+        foreground: 'var(--foreground)',
+        // Map other variables
+      },
+    },
   },
   plugins: [
     addVariablesForColors,
